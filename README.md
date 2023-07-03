@@ -41,7 +41,7 @@ for cont in range(numerode_aliens): #Cria cópias do mesmo inimigo
     aliendog.append(pygame.image.load('alienx.png'))
     aliendog.append(pygame.image.load('alienX4.png'))
     aliendog.append(pygame.image.load('alienX3.png'))
-    alien_dogX.append(872)
+    alien_dogX.append(1000)
     alien_dogY.append(random.randint(0, 400))
     alien_mudançaX.append(85)
     alien_mudançaY.append(0.5)
@@ -60,7 +60,7 @@ quantidade_misseis = 16
 
 #Pacote de reposição
 pac_reposicao= pygame.image.load('packagebullet.png')
-pac_reposicaoX=1500
+pac_reposicaoX=2000
 pac_reposicaoY= (random.randint(0, 400))
 pac_mudancaX= 85
 pac_mudancaY=4
@@ -324,7 +324,7 @@ while running:
         pac_mudancaY = -4.5
         pac_reposicaoX -= pac_mudancaX
     elif pac_reposicaoX<=-180:
-        pac_reposicaoX=2000
+        pac_reposicaoX=2100
 
     #Colisão entre o pacote e a nave para incrementar o nº de mísseis
     toque = colisao(pac_reposicaoX, pac_reposicaoY, persoX, persoY)
